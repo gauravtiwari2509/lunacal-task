@@ -2,26 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #373E44 -100%, #191B1F 100%);
+
+}
+.tab-button{
+  box-shadow: 0px 30px 30px black;
+}
+.scrollable-content::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+  background:transparent;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.scrollable-content::-webkit-scrollbar-thumb {
+  background: linear-gradient(177.32deg, #888989 5.6%, #4A4E54 93.28%);
+  border-radius: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background-color: #353535;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background-color: #f1f1f100;
+  border-radius: 10px;
+}
+.galleryAddBtn {
+  box-shadow: 
+    0px 3.26px 3.26px 0px rgba(255, 255, 255, 0.15) inset,
+    0px 0px 48.91px 0px rgba(255, 255, 255, 0.05) inset,
+    9px 10px 7.1px 0px rgba(0, 0, 0, 0.4),
+    -0.5px -0.5px 6.9px 0px rgba(255, 255, 255, 0.25);
 }
